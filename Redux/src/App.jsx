@@ -7,11 +7,11 @@ function App() {
   console.log(likes);
 
   return (
-    <>
-      <h2>{likes}</h2>
+    <div style={{margin: "0 auto",width: "fit-content"}}>
+      <h2 style={{textAlign: "center"}}>{likes}</h2>
       <button onClick={()=>dispatch(incrementLike())}>Like</button>
       <button onClick={()=>dispatch(decrementLike())}>Unlike</button>
-    </>
+    </div>
   )
 }
 
